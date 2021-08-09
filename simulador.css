@@ -157,6 +157,7 @@ input[type="radio"]:checked + .label-design {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    display: none;
 }
 #formulario-img section, .number-input {
     display: flex;
@@ -165,9 +166,13 @@ input[type="radio"]:checked + .label-design {
 }
 .number-input {
     gap: 30px;
+    display: none;
 }
 .number-input input {
     width: 120px;
+}
+.min {
+    display: none;
 }
 
 footer {
