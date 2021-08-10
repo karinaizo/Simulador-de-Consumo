@@ -58,3 +58,7 @@ function calcular() {
     document.getElementsByClassName('btn')[1].style.display = 'none';
     document.getElementsByClassName('btn')[2].style.display = 'block';
 } 
+
+function refazer() {
+    location.reload();
+}
