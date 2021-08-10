@@ -148,6 +148,10 @@ input[type="radio"]:checked + .label-design {
     align-items: center;
     flex-direction: column;
 }
+#formulario + div {
+    display: flex;
+    justify-content: center;
+}
 #formulario-img {
     display: flex;
     flex-wrap: wrap;
