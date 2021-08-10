@@ -71,6 +71,9 @@ main {
     margin: 50px 0;
 }
 
+#one {
+    background-color: #BA68C8;
+}
 section > img {
     border: 5px solid #BA68C8;
     border-radius: 30px;
@@ -172,6 +175,9 @@ input[type="radio"]:checked + .label-design {
     width: 120px;
 }
 .min {
+    display: none;
+}
+.btn {
     display: none;
 }
 
