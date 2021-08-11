@@ -316,7 +316,7 @@ function calcular() {
         document.getElementById('total').style.display = 'block';
 
         document.getElementsByClassName('botao')[1].style.display = 'none';
-        document.getElementsByClassName('botao')[2].style.display = 'block';
+        document.getElementsByClassName('botao')[3].style.display = 'block';
     }
 } 
 
