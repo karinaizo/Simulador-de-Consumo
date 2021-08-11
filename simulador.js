@@ -1,5 +1,5 @@
 function avancar1() {
-    window.document.getElementById('principal').scrollIntoView({behavior:"smooth"});
+    document.getElementById('principal').scrollIntoView({behavior:"smooth"});
 
     if ((document.getElementById('brushing').value == "") || 
         (document.getElementById('toilet').value == "") || 
@@ -37,7 +37,7 @@ function avancar1() {
 } 
 
 function avancar2() {
-    window.document.getElementById('principal').scrollIntoView({behavior:"smooth"});
+    document.getElementById('principal').scrollIntoView({behavior:"smooth"});
 
     if ((document.getElementById('input0').value == "") || 
         (document.getElementById('input1').value == "") || 
@@ -58,12 +58,38 @@ function avancar2() {
         document.getElementById('categorias').style.display = 'flex';
 
         document.getElementsByClassName('botao')[0].style.display = 'none';
-        document.getElementsByClassName('botao')[1].style.display = 'block';
+        
+        var vez0 = (document.getElementById('brushing').value)*4;
+        var vez1 = (document.getElementById('toilet').value)*4;
+        var vez2 = (document.getElementById('shower').value)*4;
+        var vez3 = (document.getElementById('washing-machine').value)*4;
+        var vez4 = (document.getElementById('dish-washing').value)*4;
+        var vez5 = (document.getElementById('sink').value)*4;
+
+        var min0 = (document.getElementById('input0').value)*vez0;
+        var min1 = (document.getElementById('input1').value)*vez2;
+        var min2 = (document.getElementById('input2').value)*vez4;
+        var min3 = (document.getElementById('input3').value)*vez5;
+
+        var litros0 = min0*2.4;
+        var litros1 = vez1*12;
+        var litros2 = min1*9;
+        var litros3 = vez3*135;
+        var litros4 = min2*7.8;
+        var litros5 = min3*2.5;
+
+        var totallitros=(litros0+litros1+litros2+litros3+litros4+litros5);
+
+        if (totallitros<=3300) {
+            document.getElementsByClassName('botao')[1].style.display = 'block';
+        } else {
+            document.getElementsByClassName('botao')[2].style.display = 'block';
+        }
     }
 } 
 
 function calcular() {
-    window.document.getElementById('principal').scrollIntoView({behavior:"smooth"});
+    document.getElementById('principal').scrollIntoView({behavior:"smooth"});
 
     if ((document.getElementById('residencial-comum').checked == false) &&
         (document.getElementById('residencial-social').checked == false) &&
@@ -316,6 +342,7 @@ function calcular() {
         document.getElementById('total').style.display = 'block';
 
         document.getElementsByClassName('botao')[1].style.display = 'none';
+        document.getElementsByClassName('botao')[2].style.display = 'none';
         document.getElementsByClassName('botao')[3].style.display = 'block';
     }
 } 
