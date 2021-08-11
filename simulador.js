@@ -1,4 +1,6 @@
 function avancar1() {
+    window.document.getElementById('principal').scrollIntoView({behavior:"smooth"});
+
     if ((document.getElementById('brushing').value == "") || 
         (document.getElementById('toilet').value == "") || 
         (document.getElementById('shower').value == "") ||
@@ -35,6 +37,8 @@ function avancar1() {
 } 
 
 function avancar2() {
+    window.document.getElementById('principal').scrollIntoView({behavior:"smooth"});
+
     if ((document.getElementById('input0').value == "") || 
         (document.getElementById('input1').value == "") || 
         (document.getElementById('input2').value == "") ||
@@ -59,10 +63,12 @@ function avancar2() {
 } 
 
 function calcular() {
+    window.document.getElementById('principal').scrollIntoView({behavior:"smooth"});
+
     if ((document.getElementById('residencial-comum').checked == false) &&
         (document.getElementById('residencial-social').checked == false) &&
         (document.getElementById('residencial-vulneravel').checked == false)){
-        alert('Por favor selecione uma categoria');
+        alert('Por favor selecione uma categoria para finalizar o cálculo');
 
     } else {
         document.getElementById('three').style.backgroundColor = 'white';
@@ -82,6 +88,28 @@ function calcular() {
         document.getElementsByClassName('min')[1].style.display = 'none';
         document.getElementsByClassName('min')[2].style.display = 'none';
         document.getElementsByClassName('min')[3].style.display = 'none';
+
+        var vez0 = (document.getElementById('brushing').value)*4;
+        var min0 = (document.getElementById('input0').value)*vez0;
+        document.getElementById('res0').value = min0.toFixed(2).replace('.', ",") + ' min';
+        document.getElementById('res1').value = (min0*2.4).toFixed(2).replace('.', ",") + ' L';
+        var litros0 = min0*2.4;
+
+        var vez1 = (document.getElementById('toilet').value)*4;
+        document.getElementById('res3').value = '--- min';
+        document.getElementById('res4').value = (vez1*12).toFixed(2).replace('.', ',') + ' L';
+        var litros1 = vez1*12;
+
+        var vez0 = (document.getElementById('brushing').value)*4;
+        var min0 = (document.getElementById('input0').value)*vez0;
+        document.getElementById('res0').value = min0.toFixed(2).replace('.', ",") + ' min';
+        document.getElementById('res1').value = (min0*2.4).toFixed(2).replace('.', ",") + ' L';
+        var litros0 = min0*2.4;
+
+        var vez3 = (document.getElementById('washing-machine').value)*4;
+        document.getElementById('res9').value = '--- min';
+        document.getElementById('res10').value = (vez3*135).toFixed(2).replace('.', ',') + ' L';
+        var litros3 = vez3*135;
 
         document.getElementsByClassName('display')[0].style.display = 'block';
         document.getElementsByClassName('display')[1].style.display = 'block';
