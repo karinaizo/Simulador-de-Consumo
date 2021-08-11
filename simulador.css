@@ -65,11 +65,11 @@ main {
     flex-direction: column;
     align-items: center;
 }
-#principal {
-    text-align: center;
-    width: 90%; 
-    margin: 50px 0;
-}
+    #principal {
+        text-align: center;
+        width: 90%; 
+        margin: 50px 0;
+    }
 
 #one {
     background-color: #BA68C8;
@@ -99,48 +99,48 @@ input {
     font-size: 20px;
     text-align: center;
 }
-input[type="button"] {
-    background-color: #BA68C8;
-    color: white;
-    box-shadow: 4px 5px #953ea5;
-}
-input[type="button"]:hover {
-    color: black;
-    transition: .3s;
-}
-input[type="button"]:active {
-    box-shadow: 2px 3px #953ea5;
-    transform: translateY(2px);
-}
-input[type="number"] {
-    width: 80px;
-}
-input[type="number"]:disabled {
-    background-color: white;
-}
+    input[type="button"] {
+        background-color: #BA68C8;
+        color: white;
+        box-shadow: 4px 5px #953ea5;
+    }
+        input[type="button"]:hover {
+            color: black;
+            transition: .3s;
+        }
+        input[type="button"]:active {
+            box-shadow: 2px 3px #953ea5;
+            transform: translateY(2px);
+        }
+    input[type="number"] {
+        width: 80px;
+    }
+        input[type="number"]:disabled {
+        background-color: white;
+    }
+    input[type="radio"] {
+        display: none;
+    }
 label {
     font-size: 22px;
     color: #000000bd;
-}
-input[type="radio"] {
-    display: none;
-}
-.label-design {
-    text-align: center;
-    border-radius: 20px;
-    background-color: white;
-    padding: 11px;
-    color: black;
-    font-size: 24px;
-    border: 4px solid white;
-}
-.label-design:hover {
-    border: 4px solid #F9DC5C;
-    transition: .2s;
-}
-input[type="radio"]:checked + .label-design {
-    border: 4px solid #F9DC5C;
-}
+} 
+    .label-design {
+        text-align: center;
+        border-radius: 20px;
+        background-color: white;
+        padding: 11px;
+        color: black;
+        font-size: 24px;
+        border: 4px solid white;
+    }
+        .label-design:hover {
+            border: 4px solid #F9DC5C;
+            transition: .2s;
+        }
+    input[type="radio"]:checked + .label-design {
+        border: 4px solid #F9DC5C;
+    }
 
 #formulario {
     margin-bottom: 50px;
@@ -181,6 +181,19 @@ input[type="radio"]:checked + .label-design {
 .min {
     display: none;
 }
+#total {
+    display: none;
+}
+    h5 {
+        font-size: 40px;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 .btn {
     display: none;
 }

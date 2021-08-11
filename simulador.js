@@ -60,6 +60,9 @@ function calcular() {
     document.getElementsByClassName('number-input')[3].style.display = 'flex';
     document.getElementsByClassName('number-input')[4].style.display = 'flex';
     document.getElementsByClassName('number-input')[5].style.display = 'flex';
+    document.getElementsByClassName('number-input')[6].style.display = 'flex';
+
+    document.getElementById('total').style.display = 'block';
 
     document.getElementsByClassName('btn')[1].style.display = 'none';
     document.getElementsByClassName('btn')[2].style.display = 'block';
