@@ -212,10 +212,10 @@ footer {
         animation-name: mov;
         font-size: 20px;
     }
-    strong {
-        display: flex;
-        justify-content: space-around;
-    }
+        strong {
+            display: flex;
+            justify-content: space-around;
+        }
 
 @keyframes mov {
     from {
@@ -225,6 +225,7 @@ footer {
         opacity: 100%;
     }
 }
+
 @keyframes slide1 {
     from {
         margin-left: -500px;
@@ -235,36 +236,36 @@ footer {
         opacity: 100%;
     }
 }
-    @keyframes slide2 {
-        from {
-            margin-left: -500px;
-            opacity: 0%;
-        }
-        to {
-            margin-left: 0 auto;
-            opacity: 100%;
-        }
+@keyframes slide2 {
+    from {
+        margin-left: -500px;
+        opacity: 0%;
     }
-    @keyframes slide3 {
-        from {
-            margin-left: -500px;
-            opacity: 0%;
-        }
-        to {
-            margin-left: 0 auto;
-            opacity: 100%;
-        }
+    to {
+        margin-left: 0 auto;
+        opacity: 100%;
     }
-    @keyframes slide4 {
-        from {
-            margin-left: -500px;
-            opacity: 0%;
-        }
-        to {
-            margin-left: 0 auto;
-            opacity: 100%;
-        }
+}
+@keyframes slide3 {
+    from {
+        margin-left: -500px;
+        opacity: 0%;
     }
+    to {
+        margin-left: 0 auto;
+        opacity: 100%;
+    }
+}
+@keyframes slide4 {
+    from {
+        margin-left: -500px;
+        opacity: 0%;
+    }
+    to {
+        margin-left: 0 auto;
+        opacity: 100%;
+    }
+}
 
 @media screen and (min-width: 1300px){
     #faixa-espaco {
