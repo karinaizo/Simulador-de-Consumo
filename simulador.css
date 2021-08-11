@@ -203,6 +203,14 @@ label {
     display: none;
 }
 
+h5 {
+    font-size: 50px;
+}
+#modal-dentro .modal-body{
+    background-color: #FF7B79;
+    background-color: #F9DC5C;
+}
+
 footer {
     background-color: #F9DC5C;
     text-align: center;
