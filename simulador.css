@@ -8,6 +8,7 @@
 
 body {
     background-color: #6CCCEC;
+    color: black;
 }
 
 a {
@@ -46,16 +47,19 @@ a {
     h1 {
         padding-bottom: 20px;
         font-size: 4.4vw;
+        font-weight: bold;
     }
         h2 {
             font-size: 1.8vw;
             color: #000000bd;
             margin-bottom: 20px;
             line-height: 28px;
+            font-weight: bold;
         }
             h2 + h3 {
                 font-size: 1.3vw;
                 color: #000000bd;
+                font-weight: bold;
             }
 
 main {
@@ -185,7 +189,7 @@ label {
 #total {
     display: none;
 }
-    h5 {
+    h6 {
         font-size: 40px;
         width: 130px;
         height: 130px;
@@ -195,7 +199,7 @@ label {
         align-items: center;
     }
 
-.btn {
+.botao {
     display: none;
 }
 
@@ -208,6 +212,8 @@ footer {
         animation-duration: 0.8s;
         animation-name: mov;
         font-size: 20px;
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
         strong {
             display: flex;
@@ -269,7 +275,7 @@ footer {
         width: 90.1%;
     }
     h1 {
-        font-size: 4.5vw;
+        font-size: 4.44vw;
     }
     h2 {
         font-size: 1.9vw;
@@ -314,6 +320,9 @@ footer {
     }
     h2 {
         line-height: 20px;
+    }
+    #formulario-img {
+        gap: 50px;
     }
 }
 

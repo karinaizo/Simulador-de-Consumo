@@ -32,7 +32,7 @@ function avancar1() {
         document.getElementsByClassName('min')[3].style.display = 'block';
 
         document.getElementById('button').style.display = 'none';
-        document.getElementsByClassName('btn')[0].style.display = 'block';
+        document.getElementsByClassName('botao')[0].style.display = 'block';
     }
 } 
 
@@ -57,8 +57,8 @@ function avancar2() {
         document.getElementById('formulario-img').style.display = 'none';
         document.getElementById('categorias').style.display = 'flex';
 
-        document.getElementsByClassName('btn')[0].style.display = 'none';
-        document.getElementsByClassName('btn')[1].style.display = 'block';
+        document.getElementsByClassName('botao')[0].style.display = 'none';
+        document.getElementsByClassName('botao')[1].style.display = 'block';
     }
 } 
 
@@ -315,8 +315,8 @@ function calcular() {
 
         document.getElementById('total').style.display = 'block';
 
-        document.getElementsByClassName('btn')[1].style.display = 'none';
-        document.getElementsByClassName('btn')[2].style.display = 'block';
+        document.getElementsByClassName('botao')[1].style.display = 'none';
+        document.getElementsByClassName('botao')[2].style.display = 'block';
     }
 } 
 
