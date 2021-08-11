@@ -89,7 +89,7 @@ h4 {
     animation-name: slide1;
 }
 section div img {
-    width: 120px;
+    width: 130px;
     height: auto;
     margin-bottom: 30px;
 }
@@ -116,9 +116,6 @@ input {
         }
     input[type="number"] {
         width: 80px;
-    }
-        input[type="number"]:disabled {
-        background-color: white;
     }
     input[type="radio"] {
         display: none;
@@ -180,7 +177,7 @@ label {
     display: none;
 }
 .number-input input {
-    width: 120px;
+    width: 130px;
 }
 .min {
     display: none;
@@ -190,8 +187,8 @@ label {
 }
     h5 {
         font-size: 40px;
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
         margin-bottom: 33px;
         display: flex;
         justify-content: center;
