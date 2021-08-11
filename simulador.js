@@ -13,6 +13,9 @@ function avancar1() {
 
         document.getElementsByTagName('h4')[0].innerHTML = 'Insira o tempo gasto a cada execução das ações';
 
+        document.getElementById('formulario').style.animationName='slide2';
+        document.getElementsByTagName('h4')[0].style.animationName='slide2';
+
         document.getElementsByClassName('display')[0].style.display = 'none';
         document.getElementsByClassName('display')[1].style.display = 'none';
 
@@ -44,6 +47,9 @@ function avancar2() {
 
         document.getElementsByTagName('h4')[0].innerHTML = 'Selecione a sua categoria';
 
+        document.getElementById('formulario').style.animationName='slide3';
+        document.getElementsByTagName('h4')[0].style.animationName='slide3';
+
         document.getElementById('formulario-img').style.display = 'none';
         document.getElementById('categorias').style.display = 'flex';
 
@@ -63,6 +69,9 @@ function calcular() {
         document.getElementById('four').style.backgroundColor = '#BA68C8';
 
         document.getElementsByTagName('h4')[0].innerHTML = 'Confira seus gastos mensais';
+
+        document.getElementById('formulario').style.animationName='slide4';
+        document.getElementsByTagName('h4')[0].style.animationName='slide4';
 
         document.getElementById('categorias').style.display = 'none';
 

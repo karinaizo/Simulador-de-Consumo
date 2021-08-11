@@ -85,6 +85,8 @@ h4 {
     margin: 50px 0;
     font-size: 25px;
     font-weight: normal;
+    animation-duration: 1s;
+    animation-name: slide1;
 }
 section div img {
     width: 120px;
@@ -147,6 +149,8 @@ label {
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation-duration: 1s;
+    animation-name: slide1;
 }
 #formulario + div {
     display: flex;
@@ -221,6 +225,46 @@ footer {
         opacity: 100%;
     }
 }
+@keyframes slide1 {
+    from {
+        margin-left: -500px;
+        opacity: 0%;
+    }
+    to {
+        margin-left: 0 auto;
+        opacity: 100%;
+    }
+}
+    @keyframes slide2 {
+        from {
+            margin-left: -500px;
+            opacity: 0%;
+        }
+        to {
+            margin-left: 0 auto;
+            opacity: 100%;
+        }
+    }
+    @keyframes slide3 {
+        from {
+            margin-left: -500px;
+            opacity: 0%;
+        }
+        to {
+            margin-left: 0 auto;
+            opacity: 100%;
+        }
+    }
+    @keyframes slide4 {
+        from {
+            margin-left: -500px;
+            opacity: 0%;
+        }
+        to {
+            margin-left: 0 auto;
+            opacity: 100%;
+        }
+    }
 
 @media screen and (min-width: 1300px){
     #faixa-espaco {
